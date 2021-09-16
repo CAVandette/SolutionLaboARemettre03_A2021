@@ -36,11 +36,6 @@ void main()
          cin >> nombre; // On met a jour le sujet de la condition du while pour éviter une boucle infinie
       }
 
-      // Question : La matière du while n'a pas été vue en cours au moment de l'écriture de ce programme, mais le fichier de note
-      // sur les boucles était disponible et je dois avouer ne pas avoir trouver de façon efficace autre que le while pour tester
-      // les valeurs. Je me demande donc si je pouvais utiliser cette matière et si il y avait d'autre façons de parvenir à la bonne
-      // solution. À ce propos, cette boucle bug lorsque l'utilisateur entre une lettre, existe-t-il solution possible??
-
       if (nombre == random)
       {
          cout << "Vous avez gagné!" << endl;

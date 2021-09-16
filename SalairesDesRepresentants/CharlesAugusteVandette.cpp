@@ -23,14 +23,11 @@ void main()
    float montant;
    float total;
 
-   montant = 0; // Initialisation du montant à 0 pour entrer directement dans le while
-   // Question : Est-ce que c'était une bonne idée d'initier le montant à zéro au lieu de faire le contenue du while une première fois?
+   cout << "Veuillez entrer vos ventes de cette semaine ou -1 pour quitter : ";
+   cin >> montant;
 
    while (montant != -1) // Tant que l'utilisateur ne met pas -1, le programme continue de demander un montant
    {
-      cout << "Veuillez entrer vos ventes de cette semaine ou -1 pour quitter : ";
-      cin >> montant;
-
       if (montant > -1) // Permet de de contrôler les mauvaises données
       {
          total = SALAIRE + (montant * POURCENTAGE);
@@ -40,6 +37,8 @@ void main()
       {
          cout << "Vous ne pouvez pas avoir un montant négatif! Votre salaire cette semaine est : " << SALAIRE << "$" << endl;
       }
+      cout << "Veuillez entrer vos ventes de cette semaine ou -1 pour quitter : ";
+      cin >> montant;
    }
 
    cout << "Merci d'avoir utilliser notre programme!" << endl;
